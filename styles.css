@@ -1,0 +1,69 @@
+
+body, button.TitleBar{
+	background: #5D5FEF;
+	color: white;
+	margin: 0px;
+	border: none;
+	border-radius: 
+}
+button.TitleBar{
+	margin: 10px 20px 10px 20px;
+	padding: 0px;
+}
+div.Main{
+	position: absolute;
+	background: #FF0051;
+	top: 160px;
+    bottom: 30px;
+    left: 50px;
+    right: 10px;
+}
+div.TitleBarMain{
+	background: #FF0051;
+	margin: 30px 50px 0px 10px;
+	height: 100px;
+}
+div.Registration{
+	align-items: center;
+	position: relative;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+}
+div.InRegistration{
+	display: flex;
+	margin: 5px;
+}
+input.Registration{
+	background: transparent;
+	width: 300px;
+	border: none;
+	height: 15px;
+	width: 300px;
+}
+div.TitleBar{
+	display: block;
+}
+.TitleBar{
+	font-size: 30px;
+}
+div.ChildRegistration{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	padding: 5px;
+	background: #5D5FEF;
+}
+div.InMain{
+	display: flex;
+}
+span.TitleBarName{
+	font-size: 40px;
+	margin-left: 100px;
+
+}
+span.TitleBarDataTime{
+	margin-right: 30px;
+	float: right;
+}
+
