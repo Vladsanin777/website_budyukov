@@ -23,23 +23,26 @@ div.TitleBarMain{
 	margin: 30px 50px 0px 10px;
 	height: 100px;
 }
-div.Registration{
+div.Registration, div.Settings{
 	align-items: center;
 	position: relative;
-	margin: 20px auto;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 }
 div.InRegistration{
+	flex-direction: column;
+	gap: 10px;
 	display: flex;
-	margin: 5px;
 }
 input.Registration{
-	background: transparent;
-	width: 300px;
+	background: rgba(255, 255, 255, 0.1);
+	width: 500px;
+	display: block;
 	border: none;
 	height: 15px;
-	width: 300px;
+	color: white;
 }
 div.TitleBar{
 	display: block;
@@ -47,15 +50,27 @@ div.TitleBar{
 .TitleBar{
 	font-size: 30px;
 }
-div.ChildRegistration{
+h2.Registration, h2.Settings{
+	margin: 20px 0px;
+}
+div.ChildRegistration, div.ChildSettings{
 	display: flex;
 	flex-direction: column;
-	width: 300px;
-	padding: 5px;
+	width: 500px;
+	padding: 20px;
+	gap: 20px;
 	background: #5D5FEF;
 }
 div.InMain{
-	display: flex;
+	display: grid;
+	position: absolute;
+	top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+	overflow: auto;
+	flex-direction: column;
+	gap: 20px;
 }
 span.TitleBarName{
 	font-size: 40px;
@@ -65,5 +80,27 @@ span.TitleBarName{
 span.TitleBarDataTime{
 	margin-right: 30px;
 	float: right;
+}
+/* Стилизация всей полосы прокрутки */
+::-webkit-scrollbar {
+    width: 12px;       /* Ширина вертикальной полосы прокрутки */
+    height: 12px;      /* Высота горизонтальной полосы прокрутки */
+}
+
+/* Стилизация области полосы прокрутки */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+/* Стилизация ползунка */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+/* Изменение цвета ползунка при наведении */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
